@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>تحميل القالب | Mais Yard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="section-white">
+  <h2>تحميل القالب المجاني</h2>
+
+  <p style="max-width:600px; margin:auto;">
+    للحصول على القالب، يرجى إدخال بريدك الإلكتروني.
+    سيتم تحويلك مباشرة إلى صفحة التحميل.
+  </p>
+
+  <form
+    name="template-download"
+    method="POST"
+    data-netlify="true"
+    action="template-thank-you.html"
+    style="margin-top:30px;"
+  >
+    <input type="hidden" name="form-name" value="template-download">
+
+    <label>البريد الإلكتروني</label>
+    <input type="email" name="email" required>
+
+    <button type="submit">تحميل القالب</button>
+  </form>
+</section>
+
+</body>
+</html>
