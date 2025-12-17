@@ -288,12 +288,17 @@ h2 {
 }
 
 /* ⬇️ أبعاد 1200×900 (4:3) */
+/* PORTFOLIO IMAGES - 1200x900 (Landscape) */
 .portfolio-card img {
   width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
+  height: auto;
+  max-width: 1200px;
+  aspect-ratio: 1200 / 900; /* عرض / طول */
+  object-fit: contain;     /* يمنع القص */
   display: block;
+  margin-inline: auto;
 }
+
 
 .portfolio-card p {
   padding: 10px 12px;
@@ -469,3 +474,4 @@ button:focus {
     transition: none !important;
   }
 }
+
