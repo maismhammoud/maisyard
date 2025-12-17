@@ -277,34 +277,26 @@ h2 {
 .portfolio-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 22px;
+  gap: 20px;
 }
 
 .portfolio-card {
   background: #fff;
-  border-radius: 10px;
+  border-radius: 8px;
   overflow: hidden;
-  flex: 1 1 260px;
+  flex: 1 1 250px;
 }
 
-/* ⬇️ أبعاد 1200×900 (4:3) */
-/* PORTFOLIO IMAGES - 1200x900 (Landscape) */
 .portfolio-card img {
   width: 100%;
-  height: auto;
-  max-width: 1200px;
-  aspect-ratio: 1200 / 900; /* عرض / طول */
-  object-fit: contain;     /* يمنع القص */
   display: block;
-  margin-inline: auto;
 }
 
-
 .portfolio-card p {
-  padding: 10px 12px;
+  padding: 8px 10px;
   margin: 0;
+  line-height: 1.45;
   font-size: 16px;
-  line-height: 1.5;
 }
 
 .lightbox {
@@ -474,4 +466,5 @@ button:focus {
     transition: none !important;
   }
 }
+
 
