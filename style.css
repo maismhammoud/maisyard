@@ -295,23 +295,21 @@ h2 {
 }
 
 /* ===============================
-   PORTFOLIO
+   PORTFOLIO (FIX IMAGE RATIO)
 ================================ */
-.portfolio-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
 .portfolio-card {
   background: #fff;
   border-radius: 8px;
   overflow: hidden;
   flex: 1 1 250px;
+  display: flex;
+  flex-direction: column;
 }
 
 .portfolio-card img {
   width: 100%;
+  aspect-ratio: 4 / 3;   /* نفس 1200×900 */
+  object-fit: cover;    /* قص ذكي بدون تشويه */
   display: block;
 }
 
@@ -489,3 +487,4 @@ button:focus {
     transition: none !important;
   }
 }
+
