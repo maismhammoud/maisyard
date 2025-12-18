@@ -311,9 +311,8 @@ h2 {
   background: #fff;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 
 .portfolio-card:hover {
   transform: translateY(-6px);
@@ -323,9 +322,9 @@ h2 {
 /* Image */
 .portfolio-card img {
   width: 100%;
-  aspect-ratio: 4 / 3;     /* 1200 × 900 */
-  object-fit: cover;
+  height: auto;        /* مهم */
   display: block;
+  object-fit: unset;  /* إلغاء أي قص */
 }
 
 /* Caption */
@@ -527,6 +526,7 @@ button:focus {
     transition: none !important;
   }
 }
+
 
 
 
